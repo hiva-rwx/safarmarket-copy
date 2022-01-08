@@ -1,0 +1,344 @@
+@font-face {
+  font-family: vazir;
+  src: url("./../font/Vazir.ttf");
+}
+@font-face {
+  font-family: yekan;
+  src: url("./../font/Yekan.ttf");
+}
+@font-face {
+  font-family: sahel;
+  src: url("./../font/Sahel.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dfe4ea;
+  overflow-x: hidden;
+  font-family: yakan;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+/* justify-content */
+.j-c-c {
+  justify-content: center;
+}
+.j-c-b {
+  justify-content: space-between;
+}
+.j-c-a {
+  justify-content: space-around;
+}
+.j-c-s {
+  justify-content: flex-start;
+}
+.j-c-e {
+  justify-content: flex-end;
+}
+/* align-items */
+.a-i-c {
+  align-items: center;
+}
+.a-i-s {
+  align-items: flex-start;
+}
+.a-i-e {
+  align-items: flex-end;
+}
+/* flex direction */
+.flex-col {
+  flex-direction: column;
+}
+/* margin */
+.m-2 {
+  margin: 4px;
+}
+.m-4 {
+  margin: 8px;
+}
+.m-8 {
+  margin: 16px;
+}
+/* m-t */
+.mt-2 {
+  margin-top: 4px;
+}
+.mt-4 {
+  margin-top: 8px;
+}
+.mt-8 {
+  margin-top: 16px;
+}
+/* m-b */
+.mb-2 {
+  margin-bottom: 4px;
+}
+.mb-4 {
+  margin-bottom: 8px;
+}
+.mb-8 {
+  margin-bottom: 16px;
+}
+/* m-r */
+.mr-2 {
+  margin-right: 4px;
+}
+.mr-4 {
+  margin-right: 8px;
+}
+.mr-8 {
+  margin-right: 16px;
+}
+/* m-l */
+.ml-2 {
+  margin-left: 4px;
+}
+.ml-4 {
+  margin-left: 8px;
+}
+.ml-8 {
+  margin-left: 16px;
+}
+/* mx */
+.mx-2 {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.mx-4 {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.mx-8 {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* my */
+.my-2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.my-4 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.my-8 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* padding */
+.p-2 {
+  padding: 4px;
+}
+.p-4 {
+  padding: 8px;
+}
+.p-8 {
+  padding: 16px;
+}
+/* p-t */
+.pt-2 {
+  padding-top: 4px;
+}
+.pt-4 {
+  padding-top: 8px;
+}
+.pt-8 {
+  padding-top: 16px;
+}
+/* p-b */
+.pb-2 {
+  padding-bottom: 4px;
+}
+.pb-4 {
+  padding-bottom: 8px;
+}
+.pb-8 {
+  padding-bottom: 16px;
+}
+/* p-r */
+.pr-2 {
+  padding-right: 4px;
+}
+.pr-4 {
+  padding-right: 8px;
+}
+.pr-8 {
+  padding-right: 16px;
+}
+/* p-l */
+.pl-2 {
+  padding-left: 4px;
+}
+.pl-4 {
+  padding-left: 8px;
+}
+.pl-8 {
+  padding-left: 16px;
+}
+/* px */
+.px-2 {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.px-4 {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.px-8 {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+/* py */
+.py-2 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.py-4 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.py-8 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* a */
+a.link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* button */
+button {
+  cursor: pointer;
+  font-family: vazir;
+}
+button,
+input,
+input:focus,
+input:hover,
+input:active {
+  outline: none;
+  border: 0;
+}
+p,span {
+  font-family: vazir;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: sahel;
+  color: #8796a1;
+}
+h1,
+h2 {
+  font-family: yekan;
+  color: #5f666b;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  h4 {
+    font-size: 0.7rem;
+  }
+  h5,
+  h6 {
+    font-size: 0.6rem;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+/* width & height */
+.w-100 {
+  width: 100%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-25 {
+  width: 25%;
+}
+
+/* list */
+
+ul {
+  list-style: none;
+  font-family: vazir;
+}
+
+/* border radius */
+.rounded-1 {
+  border-radius: 4px;
+}
+.rounded-2 {
+  border-radius: 8px;
+}
+.rounded-3 {
+  border-radius: 16px;
+}
+.rounded-4 {
+  border-radius: 32px;
+}
+.rounded-oval {
+  border-radius: 50px;
+}
+.rounded-circle {
+  border-radius: 50%;
+}
+/* border */
+.border-1 {
+  border: 2px solid #d9e2e7;
+}
+.border-2 {
+  border: 2px solid #d9e2e7;
+}
+/* text-align */
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-justify {
+  text-align: justify;
+}
+/* a link */
+a {
+  text-decoration: none;
+  font-family: vazir;
+  color: #007aff;
+}
+/* hr */
+hr {
+  width: 85%;
+  margin: 20px auto;
+  background-color: #d9e2e7;
+}

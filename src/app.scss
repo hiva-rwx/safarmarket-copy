@@ -1,0 +1,83 @@
+.wrapper {
+  padding: 0 10px;
+  width: 93%;
+  margin-top: 100px;
+  @media screen and (max-width: 768px) {
+    & {
+      width: 100%;
+    }
+  }
+}
+.signin {
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  // component
+  .logo {
+    span {
+      font-size: 16px !important;
+    }
+  }
+  .form {
+    max-width: 400px;
+    background-color: #ffff;
+    .title {
+      font-size: 18px !important;
+    }
+    .button {
+      .btn {
+        background: linear-gradient(120deg, #fc950f, #f56720);
+        color: #fff;
+        font-size: 1rem;
+      }
+    }
+    .form-control {
+      width: 100%;
+      position: relative;
+      margin: 4rem auto;
+
+      .input {
+        position: relative;
+        label {
+          position: absolute;
+          top: -50%;
+          transform: translateY(-50%);
+          font-family: yekan;
+        }
+        input {
+          padding: 10px 2rem 10px 2rem;
+          width: 100%;
+          border: 1px solid #cfd6dd;
+          font-family: sahel;
+        }
+        .icon {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 5px;
+          i {
+            font-size: 1.2rem;
+            color: #cfd6dd;
+          }
+        }
+        .eye {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 10px;
+          cursor: pointer;
+        }
+        .error {
+          font-size: 12px;
+          color: red;
+          position: absolute;
+          right: 0;
+          top: 100%;
+        }
+      }
+    }
+    .desc {
+      font-size: 0.7rem;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.footer {
+  margin-top: 40px;
+  width: 93%;
+  background-color: #fff;
+  box-shadow: 0 -1px 9px -6px grey;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  .header {
+    flex-direction: row-reverse;
+    .store {
+      div {
+        width: 120px;
+        img {
+          width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+          & {
+            width: 80px;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          & {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+  .container {
+    padding: 20px 0;
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      direction: rtl;
+      @media screen and (max-width: 768px) {
+        & {
+          flex-direction: column-reverse;
+          .links {
+            margin-right: 50px;
+            li{
+              width: calc(100% / 2) !important;
+            }
+          }
+          .official-badges {
+            text-align: center;
+            .content {
+              justify-content: center;
+            }
+          }
+        }
+      }
+      .links {
+        width: 80%;
+        margin-right: 50px;
+        li {
+          width: calc(100% / 4);
+          display: inline-block;
+          a {
+            color: #3b3b3b;
+            font-size: 13px;
+            word-wrap: break-word;
+          }
+        }
+      }
+      .official-badges {
+        .header {
+          h4 {
+            span {
+              color: rgb(255, 99, 72);
+            }
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .content {
+          direction: ltr;
+          div {
+            width: 70px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .virtual-network {
+    .items {
+      .item {
+        i {
+          font-size: 1.5rem;
+          color: #666666;
+        }
+      }
+    }
+  }
+  .rights {
+    p {
+      font-size: 12px;
+      color: #3b3b3b;
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+}

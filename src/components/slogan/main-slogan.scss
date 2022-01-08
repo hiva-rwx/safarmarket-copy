@@ -1,0 +1,42 @@
+.main-slogan {
+  height: 80px;
+  background-color: #fc4221;
+  h4 {
+    color: #fff;
+  }
+}
+.app-container {
+  height: 215px;
+  background-color: #fff;
+  background-image: url("./../../../public/images/app-container.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position: relative;
+  flex-direction: row-reverse;
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
+  .app-phone {
+    @media screen and(min-width:769px) {
+      margin-right: 50px;
+    }
+    button {
+      background-color: orange;
+      i {
+        font-size: 1.2rem;
+      }
+      &:hover {
+        background-color: rgb(255, 153, 0);
+      }
+    }
+  }
+  .img-resize {
+    @media screen and (max-width: 768px) {
+      background-image: url("./../../../public/images/app-container2.png");
+      background-repeat: no-repeat;
+      background-position-x: left;
+      background-position-y: center;
+    }
+  }
+}

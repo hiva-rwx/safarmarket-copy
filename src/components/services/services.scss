@@ -1,0 +1,22 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service {
+    height: 150px;
+    margin: 10px;
+    background-color: #fff;
+    h3 {
+      color: #5f666b !important;
+    }
+    img {
+      width: 40px;
+    }
+    .desc p {
+      font-size: 13px;
+      color: gray;
+    }
+  }
+}

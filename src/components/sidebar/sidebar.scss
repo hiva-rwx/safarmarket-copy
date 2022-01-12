@@ -1,0 +1,64 @@
+.sidebar {
+  width: 90px;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  background-color: #fefefe;
+  right: 0;
+  border-left: 2px solid #d9e2e7;
+  transition: 0.5s;
+  @media screen and (max-width:500px) {
+    &{
+      right: -100%;
+      top: 80px;
+    }
+  }
+  .menu-icon {
+    position: fixed;
+    right: 30px;
+    i {
+      font-size: 2rem;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+  }
+  .list-items {
+    margin-top: 5rem;
+    li {
+      padding: 15px 35px 15px 10px;
+      @media screen and (max-width:500px) {
+        &{
+          padding: 15px;
+        }
+      }
+      &:hover {
+        background-color: #ffd0b4;
+      }
+      cursor: pointer;
+      .item-icon {
+        right: 2rem;
+        i {
+          color: #ff690f;
+          font-size: 1.2rem;
+        }
+      }
+      .label {
+        display: none;
+      }
+      .label.active {
+        display: inline-block;
+        transition-delay: 1s;
+        margin-right: 30px;
+        flex-grow: 1;
+        text-align: right;
+        @media screen and (max-width:500px) {
+          font-size: 12px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+.sidebar.active{
+  right: 0;
+}

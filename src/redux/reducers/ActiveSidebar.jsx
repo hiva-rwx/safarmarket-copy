@@ -1,5 +1,5 @@
 import { ACTIVE_SIDEBAR } from "../types";
-const ActiveSidebar = (state = false, action) => {
+const ActiveSidebar = (state = true, action) => {
   switch (action.type) {
     case ACTIVE_SIDEBAR:
       return (state = !state);

@@ -1,6 +1,5 @@
 .footer {
   margin-top: 40px;
-  width: 93%;
   background-color: #fff;
   box-shadow: 0 -1px 9px -6px grey;
   @media screen and (max-width: 767px) {
@@ -8,6 +7,7 @@
   }
   .header {
     flex-direction: row-reverse;
+    box-shadow: none;
     .store {
       div {
         width: 120px;

@@ -1,3 +1,15 @@
 .carousel {
   margin: 16px 25px;
+  .slick-list{
+    img{
+      object-fit: cover;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    & {
+      .slick-list {
+        height: 150px !important;
+      }
+    }
+  }
 }

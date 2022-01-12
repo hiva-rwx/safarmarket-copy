@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Field, Form } from "react-final-form";
+import { Link } from "react-router-dom";
 import Button from "../../components/buttons/Button";
-import './signin.scss'
+import "./signin.scss";
 const SignInPage = () => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -24,10 +25,12 @@ const SignInPage = () => {
   return (
     <div className="signin">
       <div className="logo">
-        <h4 className="d-flex j-c-c">
-          <span style={{ color: "#ff6348" }}>Safar</span>
-          <span style={{ color: "#747d8c" }}>estan</span>
-        </h4>
+        <Link to={"/"}>
+          <h4 className="d-flex j-c-c">
+            <span style={{ color: "#ff6348" }}>Safar</span>
+            <span style={{ color: "#747d8c" }}>estan</span>
+          </h4>
+        </Link>
       </div>
       <div className="form mx-auto my-8 w-100 p-8" style={{ direction: "rtl" }}>
         <p className="title text-right">ورود / ثبت نام</p>
@@ -51,9 +54,9 @@ const SignInPage = () => {
                       <div className="icon">
                         <i className="bi bi-phone"></i>
                       </div>
-                    {!meta.active && meta.touched && meta.error && (
-                      <span className="error">{meta.error}</span>
-                    )}
+                      {!meta.active && meta.touched && meta.error && (
+                        <span className="error">{meta.error}</span>
+                      )}
                     </div>
                   </div>
                 )}
@@ -68,9 +71,9 @@ const SignInPage = () => {
                       <div className="icon">
                         <i className="bi bi-envelope"></i>
                       </div>
-                    {!meta.active && meta.touched && meta.error && (
-                      <span className="error">{meta.error}</span>
-                    )}
+                      {!meta.active && meta.touched && meta.error && (
+                        <span className="error">{meta.error}</span>
+                      )}
                     </div>
                   </div>
                 )}
@@ -99,9 +102,9 @@ const SignInPage = () => {
                           <i className="bi bi-eye-slash"></i>
                         )}
                       </div>
-                    {!meta.active && meta.touched && meta.error && (
-                      <span className="error">{meta.error}</span>
-                    )}
+                      {!meta.active && meta.touched && meta.error && (
+                        <span className="error">{meta.error}</span>
+                      )}
                     </div>
                   </div>
                 )}

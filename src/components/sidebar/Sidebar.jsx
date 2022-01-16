@@ -2,45 +2,14 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ActiveSidebar } from "../../redux/actions/ActiveSidebar";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { Link } from "react-router-dom";
 import "./sidebar.scss";
+import { PgaeSidebar } from "../../data/PageSidebar";
 const Sidebar = () => {
   const sidebar = useSelector((state) => state.sidebar);
   const dispatch = useDispatch();
 
   const { width } = useWindowDimensions();
-
-  const items = [
-    {
-      id: 1,
-      icon: <i className="bi bi-cloud-hail-fill"></i>,
-      label: "هواپیما",
-    },
-    {
-      id: 2,
-      icon: <i className="bi bi-briefcase-fill"></i>,
-      label: "تور",
-    },
-    {
-      id: 3,
-      icon: <i className="bi bi-segmented-nav"></i>,
-      label: "هتل",
-    },
-    {
-      id: 4,
-      icon: <i className="bi bi-truck-flatbed"></i>,
-      label: "بلیط قطار",
-    },
-    {
-      id: 5,
-      icon: <i className="bi bi-house-door-fill"></i>,
-      label: "ویلا و اقامتگاه",
-    },
-    {
-      id: 6,
-      icon: <i className="bi bi-geo-fill"></i>,
-      label: "بلیط اتوبوس",
-    },
-  ];
 
   return (
     <div
@@ -60,14 +29,16 @@ const Sidebar = () => {
       <div className="list-items">
         <div className="d-flex flex-col">
           <ul>
-            {items?.map((item) => {
+            {PgaeSidebar?.map((item) => {
               return (
-                <li className="d-flex j-c-b flex-reverse" key={item.id}>
-                  <div className="item-icon">{item?.icon}</div>
-                  <div className={` ${sidebar ? "label active" : "label"}`}>
-                    {item?.label}
-                  </div>
-                </li>
+                <Link to={`/${item.link}`} key={item.id}>
+                  <li className="d-flex j-c-b flex-reverse" key={item.id}>
+                    <div className="item-icon">{item?.icon}</div>
+                    <div className={` ${sidebar ? "label active" : "label"}`}>
+                      {item?.label}
+                    </div>
+                  </li>
+                </Link>
               );
             })}
           </ul>

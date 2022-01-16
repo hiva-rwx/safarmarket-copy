@@ -7,6 +7,9 @@
   right: 0;
   border-left: 2px solid #d9e2e7;
   transition: 0.5s;
+  a{
+    color: #000;
+  }
   @media screen and (max-width:500px) {
     &{
       right: -100%;

@@ -6,7 +6,7 @@ import Header from "../../components/header/Header";
 import Button from "../../components/buttons/Button";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import Sidebar from "../../components/sidebar/Sidebar";
-import { useSelector } from "react-redux";
+import Container from "./../../components/container/Container";
 
 import "./appphone.scss";
 const AppPhone = () => {
@@ -42,7 +42,6 @@ const AppPhone = () => {
       image: "./images/item5.png",
     },
   ];
-  const sidebar = useSelector((state) => state.sidebar);
 
   const { width } = useWindowDimensions();
 
@@ -52,22 +51,8 @@ const AppPhone = () => {
     <Fragment>
       <Sidebar />
       <div className="application">
-        <div
-          className="container"
-          style={{
-            width: `${
-              width > 991
-                ? sidebar
-                  ? "calc(100% - 250px)"
-                  : "calc(100% - 90px)"
-                : width <= 500
-                ? "100%"
-                : "calc(100% - 90px)"
-            }`,
-          }}
-        >
+        <Container>
           <Header />
-
           <div className={`banner d-flex j-c-a a-i-c`}>
             <div className="banner-img"></div>
             <div></div>
@@ -107,15 +92,14 @@ const AppPhone = () => {
                             </div>
                           )}
                         />
-                        
                       </form>
                     </div>
                   )}
                 />
               )}
               <Button className={"get-link rounded-1"}>
-                          {width >= 991 ? "دریافت لینک دانلود" : "نصب کن"}
-                        </Button>
+                {width >= 991 ? "دریافت لینک دانلود" : "نصب کن"}
+              </Button>
               <Button className={"share rounded-1 d-flex j-c-c a-i-c"}>
                 <i class="bi bi-share-fill"></i> <span>به اشتراک بگذار</span>{" "}
               </Button>
@@ -182,7 +166,8 @@ const AppPhone = () => {
           </div>
 
           <Footer />
-        </div>
+          {/* </div> */}
+        </Container>
       </div>
     </Fragment>
   );

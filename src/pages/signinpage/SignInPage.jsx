@@ -26,10 +26,10 @@ const SignInPage = () => {
     <div className="signin">
       <div className="logo">
         <Link to={"/"}>
-          <h4 className="d-flex j-c-c">
+          <h2 className="d-flex j-c-c">
             <span style={{ color: "#ff6348" }}>Safar</span>
             <span style={{ color: "#747d8c" }}>estan</span>
-          </h4>
+          </h2>
         </Link>
       </div>
       <div className="form mx-auto my-8 w-100 p-8" style={{ direction: "rtl" }}>
@@ -109,7 +109,7 @@ const SignInPage = () => {
                   </div>
                 )}
               />
-              <Button>ورود یه سفرستان</Button>
+              <Button style={{width:'100%'}}>ورود یه سفرستان</Button>
             </form>
           )}
         />

@@ -1,0 +1,142 @@
+.info-flight {
+  margin: 50px 10px 0 10px;
+  padding: 10px 25px;
+  border: 1px solid orangered;
+
+  .btn-search {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    button {
+      padding: 16px 42px;
+      background: linear-gradient(-45deg, #ff512f, #f09819);
+      color: #fff;
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 991px) {
+      & {
+        display: grid;
+        grid-template-columns: 100%;
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .flight-items {
+    flex-wrap: wrap;
+    position: relative;
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+      .paths {
+        justify-content: center !important;
+      }
+    }
+    .origin-citys {
+      width: 400px;
+      position: absolute;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      display: block;
+      background-color: #fff;
+      font-family: vazir;
+      .internal-out {
+        border-bottom: 1px solid #ff4500;
+      }
+      .origin-citys-head {
+        background-color: rgb(238, 231, 231);
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .citys {
+        font-size: 12px;
+        .city {
+          cursor: pointer;
+          &:hover {
+            background-color: rgba(255, 145, 0, 0.5);
+          }
+        }
+      }
+    }
+    .movement-citys {
+      width: 400px;
+      position: absolute;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      display: block;
+      background-color: #fff;
+      font-family: vazir;
+      .internal-out {
+        border-bottom: 1px solid #ff4500;
+      }
+      .movement-citys-head {
+        background-color: rgb(238, 231, 231);
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .citys {
+        font-size: 12px;
+        .city {
+          cursor: pointer;
+          &:hover {
+            background-color: rgba(255, 145, 0, 0.5);
+          }
+        }
+      }
+    }
+    .typeClass-number {
+      width: 400px;
+      position: absolute;
+      background-color: #fff;
+      padding: 20px 0;
+      z-index: 999;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      .type-class {
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        select {
+          width: 100%;
+          font-size: 1rem;
+          padding: 18px 8px;
+          background-color: #ebeef1;
+          font-family: vazir;
+        }
+      }
+      .numbers {
+        .adult,
+        .child,
+        .baby {
+          border-bottom: 1px solid rgb(209, 207, 207);
+          padding: 0 20px;
+          margin: 5px 0;
+          .old {
+            font-size: 0.7rem;
+            margin: 10px 0;
+            color: rgb(68, 68, 68);
+          }
+          .decrement {
+            color: #ebeef1;
+            cursor: not-allowed;
+            font-size: 1.5rem;
+          }
+          .decrement.active,
+          .increment {
+            color: #ff6f00;
+            font-size: 1.5rem;
+            cursor: pointer;
+          }
+          .num {
+            margin: 0 20px;
+            font-family: sahel;
+          }
+        }
+        .baby {
+          border-bottom: none;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -166,7 +166,6 @@ const AppPhone = () => {
           </div>
 
           <Footer />
-          {/* </div> */}
         </Container>
       </div>
     </Fragment>

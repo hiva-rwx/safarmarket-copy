@@ -1,0 +1,23 @@
+.change-paths {
+  display: inline-block;
+  cursor: pointer;
+  .section {
+    background-color: #fff;
+    max-width: 60px;
+    height: 70px;
+    padding: 24px 16px;
+  }
+  @media screen and (max-width: 991px) {
+    & {
+      display: block !important;
+      .section {
+        position: absolute;
+        z-index: 1;
+        left: 5%;
+        border: 4px solid #dfe4ea;
+        top: 15%;
+        padding: 10px !important;
+      }
+    }
+  }
+}

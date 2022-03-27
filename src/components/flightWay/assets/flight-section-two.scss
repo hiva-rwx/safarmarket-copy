@@ -1,0 +1,34 @@
+.section-two {
+  cursor: pointer;
+  position: relative;
+  .middle-line {
+    position: absolute;
+    width: 1px;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #c7cdd3;
+  }
+  .sections {
+    background-color: #fff;
+    width: 15rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70px;
+    // .part__1 {
+    // }
+    // .part__2 {
+    // }
+  }
+  @media screen and (max-width: 991px) {
+    & {
+      width: 100%;
+      display: inline !important;
+      .sections {
+        width: 100% !important;
+        border: 4px solid #dfe4ea;
+      }
+    }
+  }
+}

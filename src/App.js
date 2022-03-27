@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "./app.scss";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homePage/HomePage";
 import SignInPage from "./pages/signinpage/SignInPage";

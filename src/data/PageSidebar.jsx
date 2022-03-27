@@ -2,7 +2,7 @@ export const PgaeSidebar = [
   {
     id: 1,
     icon: <i className="bi bi-cloud-hail-fill"></i>,
-    label: "هواپیما",
+    label: "(active) هواپیما",
     link: "flights",
   },
   {

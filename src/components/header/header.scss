@@ -5,10 +5,12 @@
   top: 0;
   margin-bottom: 10px;
   box-shadow: rgba(92, 91, 91, 0.35) 0px 5px 15px;
-  @media screen and (max-width:991px) {
-    &{
+  @media screen and (max-width: 991px) {
+    & {
       flex-direction: row-reverse !important;
-      .logo{
+      padding-top: 4px !important;
+      padding-bottom: 4px !important;
+      .logo {
         margin: auto;
         justify-self: center !important;
       }
@@ -19,13 +21,13 @@
       background-color: #ffede2;
       color: #ff8a44;
     }
-    i{
+    i {
       font-size: 1.3rem;
       color: #333;
     }
   }
-  .menu-icon{
-    i{
+  .menu-icon {
+    i {
       font-size: 1.3rem;
     }
   }

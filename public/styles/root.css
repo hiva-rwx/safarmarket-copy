@@ -56,7 +56,7 @@ body {
 .flex-col {
   flex-direction: column;
 }
-.flex-reverse{
+.flex-reverse {
   flex-direction: row-reverse;
 }
 /* margin */
@@ -248,7 +248,9 @@ button,
 input,
 input:focus,
 input:hover,
-input:active {
+input:active,
+select,
+option {
   outline: none;
   border: 0;
 }
@@ -363,9 +365,9 @@ hr {
   background-color: #d9e2e7;
 }
 /* position */
-.pos-fixed{
+.pos-fixed {
   position: fixed;
 }
-.pos-absolute{
+.pos-absolute {
   position: absolute;
 }
